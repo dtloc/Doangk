@@ -1,0 +1,24 @@
+﻿@model IEnumerable <PlMoblieConnection.sanpham>
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_MainLayout.cshtml";
+    }
+
+    <h2>Index</h2>
+
+    @foreach (var item in Model)
+    {
+        <li class="span3">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "SanPham",  new { id = item.MaSanPham })"><img src="@item.HinhAnh" alt="" style="width:260px;height:299px;" /></a>
+                <div class="caption">
+                    <h5>@Html.ActionLink(item.TenSanPham, "Details", new { id = item.MaSanPham })</h5>
+                    <p>
+
+                    </p>
+
+                    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">@item.Gia</a></h4>
+                </div>
+            </div>
+        </li>
+    }
