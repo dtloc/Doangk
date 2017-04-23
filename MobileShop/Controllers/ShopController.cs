@@ -1,4 +1,5 @@
 ﻿using MobileShop.Models.BUS;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace MobileShop.Controllers
     public class ShopController : Controller
     {
         // GET: Shop
-        public ActionResult Index()
+        public ActionResult Index(int page = 1 , int pagesize = 3)
         {
-            var db = ShopOnlineBUS.DanhSach();
+            var db = ShopOnlineBUS.DanhSach().ToPagedList(page,pagesize);
             return View(db);
         }
 

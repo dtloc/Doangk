@@ -100,3 +100,7 @@ C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.Owin.Securit
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.csprojResolveAssemblyReference.cache
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.dll
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.pdb
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.dll
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.dll
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.xml
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.xml

@@ -1,4 +1,5 @@
-﻿@model IEnumerable <PlMoblieConnection.sanpham>
+﻿@model PagedList.IPagedList <PlMoblieConnection.sanpham>
+@using PagedList.Mvc;
     @{
         ViewBag.Title = "Index";
         Layout = "~/Views/Shared/_MainLayout.cshtml";
@@ -22,3 +23,10 @@
             </div>
         </li>
     }
+<div class="row text-center">
+    <ul class="pagination">
+        @Html.PagedListPager(Model,page => Url.Action("Index",new { page}))
+    </ul>
+
+
+</div>
