@@ -356,6 +356,10 @@
     <Content Include="images\samsung-galaxy-note-5.png" />
     <Content Include="images\samsung-galaxy-s5.png" />
     <Content Include="images\samsung-galaxy-s6.png" />
+    <Content Include="images\sile3.png" />
+    <Content Include="images\slide1.png" />
+    <Content Include="images\slide2.gif" />
+    <Content Include="images\slide4.png" />
     <Content Include="images\sony-xperia-x.png" />
     <Content Include="images\sony-xperia-xa.png" />
     <Content Include="Models\Generated\Database.tt">
