@@ -1,4 +1,5 @@
-﻿using PlMoblieConnection;
+﻿using Microsoft.Owin.BuilderProperties;
+using PlMoblieConnection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace MobileShop.Areas.Admin.Controllers
 {
     public class QuanLiSanPhamController : Controller
     {
+        private object db;
+
         // GET: Admin/QuanLiSanPham
         public ActionResult Index()
         {
@@ -90,7 +93,9 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiSanPham/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var sp = MobileShop.Models.BUS.ShopOnlineBUS.SanPham(id);
+            MobileShop.Models.BUS.ShopOnlineBUS.DeleteSP(sp);
+            return RedirectToAction("Index");
         }
 
         // POST: Admin/QuanLiSanPham/Delete/5

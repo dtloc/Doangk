@@ -19,5 +19,19 @@ namespace MobileShop.Models.BUS
             return ct.SingleOrDefault<PlMoblieConnection.sanpham>("select * from sanpham where MaSanPham=@0", id);
 
         }
+        public static sanpham SanPham(int id)
+        {
+            using (var db = new PlMoblieConnectionDB())
+            {
+                return db.SingleOrDefault<sanpham>("select * from sanpham where MaSanPham = @0", id);
+            }
+        }
+        public static void DeleteSP(sanpham sp)
+        {
+
+            var db = new PlMoblieConnectionDB();
+            db.Delete(sp); 
+
+        }
     }
 }
