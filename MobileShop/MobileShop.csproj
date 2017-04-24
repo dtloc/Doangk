@@ -420,6 +420,8 @@
     <Content Include="Areas\Admin\Css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Areas\Admin\Css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Areas\Admin\Views\QuanLiSanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLiSanPham\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLiSanPham\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

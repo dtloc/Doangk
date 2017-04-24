@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlMoblieConnection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,35 +30,56 @@ namespace MobileShop.Areas.Admin.Controllers
 
         // POST: Admin/QuanLiSanPham/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(sanpham sp)
         {
-            try
+            //try
+            //{
+            var ha = HttpContext.Request.Files[0];
+            if(ha.ContentLength >0)
             {
+                string name = sp.MaSanPham + ".png";
+                string fullName = "~/images/" + name;
+                ha.SaveAs(Server.MapPath(fullName));
+                sp.HinhAnh = "/images/" + name;
+            }
                 // TODO: Add insert logic here
-
+                var db = new PlMoblieConnectionDB();
+                db.Insert(sp);
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            //}
+            //catch
+            //{
+            //    return View();
+            //}
         }
 
         // GET: Admin/QuanLiSanPham/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var sp = MobileShop.Models.BUS.ShopOnlineBUS.ChiTietSanPham(id);
+            return View(sp);
         }
 
         // POST: Admin/QuanLiSanPham/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(sanpham sp)
         {
             try
             {
                 // TODO: Add update logic here
-
+                var ha = HttpContext.Request.Files[0];
+                if (ha.ContentLength > 0)
+                {
+                    string name = sp.MaSanPham + ".png";
+                    string fullName = "~/images/" + name;
+                    ha.SaveAs(Server.MapPath(fullName));
+                    sp.HinhAnh = "/images/" + name;
+                }
+                // TODO: Add insert logic here
+                var db = new PlMoblieConnectionDB();
+                db.Update(sp);
                 return RedirectToAction("Index");
+                //}
             }
             catch
             {

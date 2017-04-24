@@ -30,10 +30,10 @@
             <th> Số Lượt Xem</th>
             <th> Ngày Nhập</th>
             <th> Số Lượng</th>
-            <th>
-                <button>
-                    abc
-                </button>
+            <th style="text-align:center;">
+                <a href="~/Admin/QuanLiSanPham/Create"><img src="~/Areas/Admin/Css/image/Add.png" width="30" /></a>
+                
+
             </th>
         </tr>
         @foreach (var item in Model)
@@ -46,6 +46,12 @@
                 <td>@item.SoLuotXem</td>
                 <td>@item.NgayNhap</td>
                 <td>@item.SoLuong</td>
+                <td style="text-align:center;">
+                    <a href="~/Admin/QuanLiSanPham/Edit/@item.MaSanPham"><img src="~/Areas/Admin/Css/image/edit1.png" width="30" /></a>
+                    &nbsp;
+                    <a href="#"><img src="~/Areas/Admin/Css/image/delete.png" width="30" /></a>
+
+                </td>
             </tr>
         }
 
