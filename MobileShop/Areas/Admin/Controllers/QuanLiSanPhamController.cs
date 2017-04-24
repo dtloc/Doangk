@@ -1,39 +1,33 @@
-﻿using MobileShop.Models.BUS;
-using PagedList;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MobileShop.Controllers
+namespace MobileShop.Areas.Admin.Controllers
 {
-    public class ShopController : Controller
+    public class QuanLiSanPhamController : Controller
     {
-        // GET: Shop
-        public ActionResult Index(int page = 1 , int pagesize = 3)
+        // GET: Admin/QuanLiSanPham
+        public ActionResult Index()
         {
-            var db = ShopOnlineBUS.DanhSach().ToPagedList(page,pagesize);
-            return View(db);
+            var dssp = MobileShop.Models.BUS.ShopOnlineBUS.DanhSach();
+            return View(dssp);
         }
 
-        // GET: Shop/Details/5
+        // GET: Admin/QuanLiSanPham/Details/5
         public ActionResult Details(int id)
         {
-            return View(ShopOnlineBUS.ChiTietSanPham(id));
-        }
-        public ActionResult PhanLoai(int id)
-        {
-            return View(LoaiSanPhamBUS.PhanLoaiSP(id));
+            return View();
         }
 
-        // GET: Shop/Create
+        // GET: Admin/QuanLiSanPham/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Shop/Create
+        // POST: Admin/QuanLiSanPham/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -49,13 +43,13 @@ namespace MobileShop.Controllers
             }
         }
 
-        // GET: Shop/Edit/5
+        // GET: Admin/QuanLiSanPham/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Shop/Edit/5
+        // POST: Admin/QuanLiSanPham/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -71,13 +65,13 @@ namespace MobileShop.Controllers
             }
         }
 
-        // GET: Shop/Delete/5
+        // GET: Admin/QuanLiSanPham/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Shop/Delete/5
+        // POST: Admin/QuanLiSanPham/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

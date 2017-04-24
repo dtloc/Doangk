@@ -1,9 +1,9 @@
-﻿@model PagedList.IPagedList <PlMoblieConnection.sanpham>
-@using PagedList.Mvc;
-    @{
-        ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_MainLayout.cshtml";
-    }
+﻿@model IEnumerable<PlMoblieConnection.sanpham>
+@*@using PagedList.Mvc;*@
+@{
+    ViewBag.Title = "PhanLoai";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
 
 <ul style="list-style: none;">
     @foreach (var item in Model)
@@ -23,10 +23,11 @@
         </li>
     }
 </ul>
-<div style="text-align:center;">
+@*<div style="text-align:center;">
     <ul class="pagination">
-        @Html.PagedListPager(Model,page => Url.Action("Index",new { page}))
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
     </ul>
 
 
-</div>
+</div>*@
+

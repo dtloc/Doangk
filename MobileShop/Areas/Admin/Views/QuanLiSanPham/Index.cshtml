@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PlMoblieConnection.sanpham>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #109cc2;
+    }
+</style>
+<table>
+    <tr>
+        <th>Mã Nhà Sản Xuất</th>
+        <th>Mã Sản Phẩm</th>
+        <th>Tên Sản Phẩm</th>
+        <th>Giá </th>
+        <th> Số Lượt Xem</th>
+        <th> Ngày Nhập</th>
+        <th> Số Lượng</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MaNSX</td>
+            <td>@item.MaSanPham</td>
+            <td>@item.TenSanPham</td>
+            <td>@item.Gia</td>
+            <td>@item.SoLuotXem</td>
+            <td>@item.NgayNhap</td>
+            <td>@item.SoLuong</td>
+        </tr>
+    }
+    
+</table>
+
