@@ -20,28 +20,34 @@
         background-color: #109cc2;
     }
 </style>
-<table>
-    <tr>
-        <th>Mã Nhà Sản Xuất</th>
-        <th>Mã Sản Phẩm</th>
-        <th>Tên Sản Phẩm</th>
-        <th>Giá </th>
-        <th> Số Lượt Xem</th>
-        <th> Ngày Nhập</th>
-        <th> Số Lượng</th>
-    </tr>
-    @foreach (var item in Model)
-    {
+<div style="width:84.3%; float:right;">
+    <table>
         <tr>
-            <td>@item.MaNSX</td>
-            <td>@item.MaSanPham</td>
-            <td>@item.TenSanPham</td>
-            <td>@item.Gia</td>
-            <td>@item.SoLuotXem</td>
-            <td>@item.NgayNhap</td>
-            <td>@item.SoLuong</td>
+            <th>Mã Nhà Sản Xuất</th>
+            <th>Mã Sản Phẩm</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Giá </th>
+            <th> Số Lượt Xem</th>
+            <th> Ngày Nhập</th>
+            <th> Số Lượng</th>
+            <th>
+                <button>
+                    abc
+                </button>
+            </th>
         </tr>
-    }
-    
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaNSX</td>
+                <td>@item.MaSanPham</td>
+                <td>@item.TenSanPham</td>
+                <td>@item.Gia</td>
+                <td>@item.SoLuotXem</td>
+                <td>@item.NgayNhap</td>
+                <td>@item.SoLuong</td>
+            </tr>
+        }
 
+    </table>
+</div>
