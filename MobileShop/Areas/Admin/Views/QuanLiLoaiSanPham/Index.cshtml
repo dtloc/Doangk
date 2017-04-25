@@ -1,0 +1,57 @@
+﻿
+
+@model IEnumerable<PlMoblieConnection.loaisanpham>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #109cc2;
+    }
+</style>
+<div style="width:84.3%; float:right;">
+    <table>
+        <tr>
+            <th>Mã Loại Sản Phẩm</th>
+            <th>Tên Loại Sản Phẩm</th>
+            
+
+            <th style="text-align:center;">
+                <a href="~/Admin/QuanLiLoaiSanPham/Create"><img src="~/Areas/Admin/Css/image/Add.png" width="30" /></a>
+
+
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaLSP</td>
+                <td>@item.TenLSP</td>
+               
+                <td style="text-align:center;">
+                    <a href="~/Admin/QuanLiLoaiSanPham/Edit/@item.MaLSP"><img src="~/Areas/Admin/Css/image/edit1.png" width="30" /></a>
+                    &nbsp;
+                    <a href="~/Admin/QuanLiLoaiSanPham/Delete/@item.MaLSP"><img src="~/Areas/Admin/Css/image/delete.png" width="30" /></a>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

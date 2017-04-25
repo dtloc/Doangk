@@ -10,17 +10,30 @@ namespace MobileShop.Models.BUS
     {
         private static object db;
 
-        public static IEnumerable<nhasanxuat> DanhSach()
+        public static IEnumerable<loaisanpham> DanhSach()
         {
             var db = new PlMoblieConnectionDB();
-            return db.Query<nhasanxuat>("select * from nhasanxuat where bixoa =0");
+            return db.Query<loaisanpham>("select * from loaisanpham where bixoa =0");
         }
         public static IEnumerable<sanpham> PhanLoaiSP(int id)
         {
             var db = new PlMoblieConnectionDB();
             return db.Query<sanpham>("select * from sanpham where MaNSX = @0", id);
         }
+        public static loaisanpham lsp(int id)
+        {
+            using (var db = new PlMoblieConnectionDB())
+            {
+                return db.SingleOrDefault<loaisanpham>("select * from loaisanpham where MaLSP = @0", id);
+            }
+        }
+        public static void DeleteLSP(loaisanpham sp)
+        {
 
+            var db = new PlMoblieConnectionDB();
+            db.Delete(sp);
+
+        }
 
     }
 }

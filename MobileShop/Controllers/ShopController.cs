@@ -24,7 +24,7 @@ namespace MobileShop.Controllers
         }
         public ActionResult PhanLoai(int id)
         {
-            return View(LoaiSanPhamBUS.PhanLoaiSP(id));
+            return View(SanPhamBUS.PhanLoaiSP(id));
         }
 
         // GET: Shop/Create

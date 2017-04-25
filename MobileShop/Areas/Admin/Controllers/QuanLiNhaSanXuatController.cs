@@ -12,7 +12,7 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiNhaSanXuat
         public ActionResult Index()
         {
-            var dsnsx = MobileShop.Models.BUS.LoaiSanPhamBUS.DanhSach();
+            var dsnsx = MobileShop.Models.BUS.NhaSanXuatBUS.DanhSach();
             return View(dsnsx);
         }
 
@@ -56,6 +56,7 @@ namespace MobileShop.Areas.Admin.Controllers
 
         // POST: Admin/QuanLiNhaSanXuat/Edit/5
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult Edit(int id, nhasanxuat n)
         {
             try
