@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlMoblieConnection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,8 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiNhaSanXuat
         public ActionResult Index()
         {
-            return View();
+            var dsnsx = MobileShop.Models.BUS.LoaiSanPhamBUS.DanhSach();
+            return View(dsnsx);
         }
 
         // GET: Admin/QuanLiNhaSanXuat/Details/5
@@ -28,12 +30,14 @@ namespace MobileShop.Areas.Admin.Controllers
 
         // POST: Admin/QuanLiNhaSanXuat/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(nhasanxuat nsx)
         {
             try
             {
                 // TODO: Add insert logic here
 
+                var db = new PlMoblieConnectionDB();
+                db.Insert(nsx);
                 return RedirectToAction("Index");
             }
             catch
@@ -45,17 +49,21 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiNhaSanXuat/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            
+            var n = MobileShop.Models.BUS.ShopOnlineBUS.NSX(id);
+            return View(n);
         }
 
         // POST: Admin/QuanLiNhaSanXuat/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, nhasanxuat n)
         {
             try
             {
                 // TODO: Add update logic here
 
+                var db = new PlMoblieConnectionDB();
+                db.Update(n);
                 return RedirectToAction("Index");
             }
             catch
@@ -67,7 +75,9 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiNhaSanXuat/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var sp = MobileShop.Models.BUS.ShopOnlineBUS.NSX(id);
+            MobileShop.Models.BUS.ShopOnlineBUS.DeleteNSX(sp);
+            return RedirectToAction("Index");
         }
 
         // POST: Admin/QuanLiNhaSanXuat/Delete/5

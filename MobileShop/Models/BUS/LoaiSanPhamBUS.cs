@@ -20,13 +20,6 @@ namespace MobileShop.Models.BUS
             var db = new PlMoblieConnectionDB();
             return db.Query<sanpham>("select * from sanpham where MaNSX = @0", id);
         }
-        //public static sanpham SanPham(string id)
-        //{
-        //    using (var db = new PlMoblieConnectionDB())
-        //    {
-        //        return db.SingleOrDefault<sanpham>("select * from sanpham where MaNSX = @0", id);
-        //    }
-        //}
 
 
     }

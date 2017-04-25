@@ -33,5 +33,19 @@ namespace MobileShop.Models.BUS
             db.Delete(sp); 
 
         }
+        public static nhasanxuat NSX(int id)
+        {
+            using (var db = new PlMoblieConnectionDB())
+            {
+                return db.SingleOrDefault<nhasanxuat>("select * from nhasanxuat where MaNSX = @0", id);
+            }
+        }
+        public static void DeleteNSX(nhasanxuat sp)
+        {
+
+            var db = new PlMoblieConnectionDB();
+            db.Delete(sp);
+
+        }
     }
 }

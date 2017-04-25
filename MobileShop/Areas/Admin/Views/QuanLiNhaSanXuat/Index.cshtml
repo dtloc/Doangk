@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PlMoblieConnection.nhasanxuat>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #109cc2;
+    }
+</style>
+<div style="width:84.3%; float:right;">
+    <table>
+        <tr>
+            <th>Mã Nhà Sản Xuất</th>
+            <th>Tên Nhà Sản Xuất</th>
+            <th>Mô tả</th>
+            
+            <th style="text-align:center;">
+                <a href="~/Admin/QuanLiNhaSanXuat/Create"><img src="~/Areas/Admin/Css/image/Add.png" width="30" /></a>
+
+
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaNSX</td>
+                <td>@item.TenNSX</td>
+                <td>@item.MoTa</td>
+                <td style="text-align:center;">
+                    <a href="~/Admin/QuanLiNhaSanXuat/Edit/@item.MaNSX"><img src="~/Areas/Admin/Css/image/edit1.png" width="30" /></a>
+                    &nbsp;
+                    <a href="~/Admin/QuanLiNhaSanXuat/Delete/@item.MaNSX"><img src="~/Areas/Admin/Css/image/delete.png" width="30" /></a>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

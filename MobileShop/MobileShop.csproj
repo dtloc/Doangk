@@ -435,6 +435,9 @@
     <Content Include="Areas\Admin\Views\QuanLiSanPham\Index.cshtml" />
     <Content Include="Areas\Admin\Views\QuanLiSanPham\Create.cshtml" />
     <Content Include="Areas\Admin\Views\QuanLiSanPham\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLiNhaSanXuat\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLiNhaSanXuat\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLiNhaSanXuat\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -673,7 +676,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\QuanLiNhaSanXuat\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="themes\less\oregional\" />
     <Folder Include="Views\_PhanTrang\" />
