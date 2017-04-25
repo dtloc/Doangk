@@ -1,54 +1,3 @@
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\ApplicationInsights.config
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\csc.exe
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.CodeAnalysis.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.CSharp.Core.targets
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\System.Collections.Immutable.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\System.Reflection.Metadata.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\vbc.exe
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\VBCSCompiler.exe
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\roslyn\VBCSCompiler.exe.config
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\MobileShop.dll.config
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\MobileShop.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\MobileShop.pdb
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AI.DependencyCollector.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AI.Web.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AI.WindowsServer.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.ApplicationInsights.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Helpers.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Mvc.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Optimization.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Razor.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.WebPages.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.WebPages.Deployment.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.WebPages.Razor.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Antlr3.Runtime.pdb
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Newtonsoft.Json.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Net.Http.Formatting.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Http.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\System.Web.Http.WebHost.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\EntityFramework.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\EntityFramework.SqlServer.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AspNet.Identity.Core.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AspNet.Identity.Owin.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Host.SystemWeb.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.Facebook.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.Cookies.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.OAuth.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.Google.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.Twitter.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-S:\Lap trinh web 2\MobileShop\MobileShop\obj\Debug\MobileShop.csprojResolveAssemblyReference.cache
-S:\Lap trinh web 2\MobileShop\MobileShop\obj\Debug\MobileShop.dll
-S:\Lap trinh web 2\MobileShop\MobileShop\obj\Debug\MobileShop.pdb
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\ApplicationInsights.config
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\roslyn\csc.exe
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -65,12 +14,16 @@ C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\roslyn\VBCSCompiler.ex
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\MobileShop.dll.config
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\MobileShop.dll
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\MobileShop.pdb
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.dll
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.dll
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.AI.Web.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.xml
+C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\System.Web.Helpers.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\System.Web.Mvc.xml
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\System.Web.Optimization.xml
@@ -100,7 +53,3 @@ C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\Microsoft.Owin.Securit
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.csprojResolveAssemblyReference.cache
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.dll
 C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\obj\Debug\MobileShop.pdb
-C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.dll
-C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.dll
-C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.xml
-C:\Users\Lộc Siêu Nhân\Desktop\Doangk\MobileShop\bin\PagedList.Mvc.xml

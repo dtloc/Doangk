@@ -34,11 +34,11 @@
                 <a class="navbar-brand" href="~/Areas/Admin/Css/index.html">Trang Quản Lí của Admin </a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul id="active" class="nav navbar-nav side-nav">
+                @*<ul id="active" class="nav navbar-nav side-nav">
                     <li class="selected">@Html.ActionLink("Quản Lí Sản Phẩm", "Index", "QuanLiSanPham")</li>
                     <li class="selected">@Html.ActionLink("Quản Lí NSX", "Index", "QuanLiNhaSanXuat")</li>
                     <li class="selected">@Html.ActionLink("Quản Lí Loại SP", "Index", "QuanLiLoaiSanPham")</li>
-                </ul>
+                </ul>*@
                 <ul class="nav navbar-nav navbar-right navbar-user">
                     <li class="dropdown messages-dropdown">
                         <a href="~/Areas/Admin/Css/#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
@@ -81,9 +81,43 @@
             </div>
         </nav>
     </div>
-    <!-- /#wrapper -->
-    @RenderBody()
+    <div style="width: 100%; background-color: #333; margin-top: -18px; margin-bottom: 20px;">
+        <div style="margin: auto; width: 500px;">
+            <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                }
 
-    @RenderSection("scripts", required:false)
+                li {
+                    float: left;
+                }
+
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+
+                        li a:hover {
+                            background-color: #111;
+                        }
+            </style>
+            <ul>
+                <li>@Html.ActionLink("Quản Lí Sản Phẩm", "Index", "QuanLiSanPham")</li>
+                <li>@Html.ActionLink("Quản Lí NSX", "Index", "QuanLiNhaSanXuat")</li>
+                <li>@Html.ActionLink("Quản Lí Loại SP", "Index", "QuanLiLoaiSanPham")</li>
+            </ul>
+        </div>
+        </div>
+        <!-- /#wrapper -->
+        @RenderBody()
+
+        @RenderSection("scripts", required: false)
 </body>
 </html>

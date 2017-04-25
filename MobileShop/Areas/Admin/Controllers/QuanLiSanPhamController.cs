@@ -93,8 +93,8 @@ namespace MobileShop.Areas.Admin.Controllers
         // GET: Admin/QuanLiSanPham/Delete/5
         public ActionResult Delete(int id)
         {
-            var sp = MobileShop.Models.BUS.ShopOnlineBUS.NSX(id);
-            MobileShop.Models.BUS.ShopOnlineBUS.DeleteNSX(sp);
+            var sp = MobileShop.Models.BUS.ShopOnlineBUS.SanPham(id);
+            MobileShop.Models.BUS.ShopOnlineBUS.DeleteSP(sp);
             return RedirectToAction("Index");
         }
 
