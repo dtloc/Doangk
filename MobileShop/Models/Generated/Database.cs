@@ -317,6 +317,42 @@ namespace PlMoblieConnection
 
     
 
+	[TableName("dbo.HinhAnh")]
+
+
+
+	[PrimaryKey("MaHinh")]
+
+
+
+
+	[ExplicitColumns]
+
+    public partial class HinhAnh : PlMoblieConnectionDB.Record<HinhAnh>  
+    {
+
+
+
+		[Column] public int MaHinh { get; set; }
+
+
+
+
+
+		[Column("HinhAnh")] public string _HinhAnh { get; set; }
+
+
+
+
+
+		[Column] public int? MaSanPham { get; set; }
+
+
+
+	}
+
+    
+
 	[TableName("dbo.khachhang")]
 
 
@@ -548,46 +584,6 @@ namespace PlMoblieConnection
 
 
 		[Column] public byte[] definition { get; set; }
-
-
-
-	}
-
-    
-
-	[TableName("dbo.taikhoan")]
-
-
-
-	[PrimaryKey("MaTaiKhoan", AutoIncrement=false)]
-
-
-	[ExplicitColumns]
-
-    public partial class taikhoan : PlMoblieConnectionDB.Record<taikhoan>  
-    {
-
-
-
-		[Column] public int MaTaiKhoan { get; set; }
-
-
-
-
-
-		[Column] public string TenDangNhap { get; set; }
-
-
-
-
-
-		[Column] public string MatKhau { get; set; }
-
-
-
-
-
-		[Column] public int bixoa { get; set; }
 
 
 

@@ -11,7 +11,7 @@ namespace MobileShop.Areas.Admin.Controllers
     public class QuanLiSanPhamController : Controller
     {
         private object db;
-
+        [Authorize(Roles = "Admin")]
         // GET: Admin/QuanLiSanPham
         public ActionResult Index()
         {

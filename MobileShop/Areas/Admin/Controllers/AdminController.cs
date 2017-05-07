@@ -8,6 +8,7 @@ namespace MobileShop.Areas.Admin.Controllers
 {
     public class AdminController : Controller
     {
+        [Authorize(Roles ="Admin")]
         // GET: Admin/Admin
         public ActionResult Index()
         {

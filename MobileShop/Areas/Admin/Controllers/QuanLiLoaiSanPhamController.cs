@@ -9,6 +9,7 @@ namespace MobileShop.Areas.Admin.Controllers
 {
     public class QuanLiLoaiSanPhamController : Controller
     {
+        [Authorize(Roles = "Admin")]
         // GET: Admin/QuanLiLoaiSanPham
         public ActionResult Index()
         {
